@@ -1,0 +1,31 @@
+body {
+    background-image: url("fotoo-fotor-2024100721253.jpg");
+   background-repeat: no-repeat;
+  background-size: cover;
+  }
+nav {
+    display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 20px;
+padding-left: 5%;
+padding-right: 5%;
+font-weight: bold;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+font-size: 45px;
+color: white;
+}
+ul li {
+display: inline-block;
+padding: 0px 20px;
+}
+a { 
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a:hover {
+color: rgb(202, 47, 0);
+}
