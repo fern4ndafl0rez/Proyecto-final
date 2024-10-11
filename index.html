@@ -1,24 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="utf-8">
-  <title>HTML</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.ibb.co/bQV76Tb/pixelcut-export-1.png" type="image/x-icon">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Patacomania : El sabor que nunca olvidasSSS </title>
 </head>
+
 <body>
-    
-<header> 
-<nav> 
-    <h1>PATACOMANIA</h1>
-<ul> 
-<li><a href="#">INICIO</a></li>
-<li><a href="#">NOSOTROS</a></li>
-<li><a href="#">PRODUCTOS</a></li>
-<li><a href="#">CONTACTO</a></li>
-<li><a href="#">CERRAR SECCION</a></li>
-</ul>
-</nav>
-</header>
+    <section class="home">
+        <!-- Inicio de header-->
+        <header class="header">
+            <!-- Inicio NAV-->
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Productos</a>
+                <a href="#">Contacto</a>
+                <a href="#">Cerrar sesión</a>
+            </nav>
+            <!-- Cerrar nav-->
+            <form action="#" class="barra-busqueda">
+
+                <input type="text" placeholder="Buscar..">
+                <button type="submit"><i class='bx bx-search'></i> </button>
+            </form>
+        </header>
+        <!-- Fin de header-->
+
+
+        <!-- Menu inicio-->
+        <div class="container">
+            <div class="content">
+                <img src="https://i.ibb.co/bQV76Tb/pixelcut-export-1.png" class="ImagenMenu">
+                <div class="text-sci">
+                    <h2> ¡Bienvenido! <br> <span>tradicion, sabor y alegria en cada plato.</span></h2>
+                    <div class="textoo"></div>
+                    <p>¡Solo un paso más! Registra tus datos y haz tu pedido al instante.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-tiktok'></i></a>
+                        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="logreg-box">
+                <div class="form-box login">
+                    <form action="#">
+                        <h2> Registrarme</h2>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bx-user-circle'></i></span>
+                            <input type="name" id="username" required placeholder="Nombre">
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bx-edit-alt'></i></span>
+                            <input type="last-name" placeholder="Apellidos" id="Apellidos" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-group'></i></span>
+                            <input type="genero" placeholder="Género" id="genero" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"> <i class='bx bxs-envelope'></i></span>
+                            <input type="email" placeholder="Correo Electronico" id="correo" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bx-lock-alt'></i> </span>
+                            <input type="password" id="password" placeholder="Contraseña" required>
+                        </div>
+                        <span>
+                            <button type="submit" class="btn">Registrarme</button>
+                </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="container" id="login.container" style="display: none;">
+        <h2> Iniciar sesion</h2>
+        <form id="loginForm">
+            <label for="loginCorreo"> Correo Electronico</label>
+            <input type="text" id="loginCorreo" placeholder="Correo Electronico" required>
+
+            <label for="loginUsername">Usuario</label>
+            <input type="username" id="loginUsername" placeholder="Usuario" required>
+
+            <label for="loginPassword"> Contraseña</label>
+            <input type="password" id="loginPassword" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesion</button>
+            <p id="loginMessage"></p>
+        </form>
+    </div>
+
+    <script src="script.js"> </script>
 </body>
+
 </html>

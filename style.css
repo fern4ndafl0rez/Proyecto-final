@@ -1,31 +1,256 @@
+/*Comienzo de pagina, el fondo y tipo de letra */
 body {
-    background-image: url("fotoo-fotor-2024100721253.jpg");
-   background-repeat: no-repeat;
-  background-size: cover;
-  }
-nav {
-    display: flex;
-align-items: center;
-justify-content: space-between;
-padding-top: 20px;
-padding-left: 5%;
-padding-right: 5%;
-font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background-image: url("istockphoto-1264642962-612x612\ \(1\).jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-font-size: 45px;
+
+/*El header de la pagina, con especificaciones y demas (el fondo del menu) */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 20px 5%;
+    background: transparent;
+    display: flex;
+   justify-content:space-around;
+    align-items: center;
+}
+
+
+/*Las letras del menu : Inicio, nosotros, etc */
+.menu a {
+    position: relative;
+font-size: 16px;
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-weight: 500px;
+margin-right: 30px;
+} 
+
+/*Color y posicion de las rayitas de las letras del menu */
+.menu a::after {
+content: "" ;
+position: absolute;
+left: 0;
+bottom: -6px;
+width: 100%;
+height: 2px;
+background-color: rgb(255, 255, 255);
+border-radius: 5px;
+transition: .5s;
+opacity: 0;
+transform: translateY(10px);
+}
+
+/*Opacidad para llevar a cabo el movimiento y transicion de las rayitas del menu */
+.menu a:hover:after {
+
+    transform: translateY(0);
+opacity: 1;
+}
+
+/*El cuadrado de la barra de busqueda : Posicion y color*/
+.barra-busqueda {
+width: 250px;
+height: 45px;
+background: transparent;
+border: 2px solid rgb(255, 255, 255);
+border-radius: 6px;
+display: flex;
+align-items: center;
+}
+
+/*El color del texto dentro del cuadrado del buscador*/
+.barra-busqueda input {
+width: 100%;
+background: transparent;
+border: none;
+outline: none;
+font-size: 16px;
+color: rgb(255, 255, 255);
+padding-left: 10px;
+}
+
+/* Hacer que el texto del cuadrado de busqueda sea placeholder*/
+.barra-busqueda input ::placeholder {
+color: #ffff;
+}
+
+/*El fondo del icono de lupa en la barra de buscador */
+.barra-busqueda button {
+width: 40px;
+height: 100%;
+background: transparent;
+border: none;
+outline: none;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+/* El tamaño de letra de la palabra "Buscar" y el color, en la barra de busqueda*/
+.barra-busqueda button i {
+    font-size: 22px;
+    color: white;
+}
+
+ .ImagenMenu {
+ 
+    width: 40%;
+    height: auto;
+
+ }
+
+/* La imagen dentro del fondo principal, con sus caracteristicas y demas*/
+.container {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 80%;
+height: 85%;
+background: url("images/istockphoto-1264642962-612x612\ \(1\).jpg") no-repeat;
+background-size: cover;
+background-position: center;
+border-radius: 10px;
+margin-top: 1rem;
+z-index: -1;
+}
+
+/* Color y posicion del texto que dice "Bienvenido, tradicion, sabor y alegria en cada plato" etc..*/
+.container .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+    width: 58%;
+    height: 83.5%;
+    background: transparent;
+    padding: 40px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+/* El tamaño del BIENVENIDO*/
+.text-sci h2 {
+    font-size: 40px;
+    line-height: 1;
+}
+
+
+/* El tamaño de letra del "tradicion,sabor y alegria en cada plato"*/
+.text-sci h2 span {
+    font-size: 25px;
+}
+
+
+/*Tamaño de letra de "Solo un paso más! Registra tus datos y haz tu pedido al instante" */
+.text-sci p {
+font-size: 12px;
+margin: 2px 0px;
+}
+
+
+/*El margen para que las redes y el texto no queden separados*/
+.textoo {
+margin-top: -20px;
+}
+
+/* Color de los iconos de redes sociales mas la posicion y transicion*/
+.social-icons a i {
+font-size: 22px;
+color: rgb(255, 255, 255);
+margin-right: 10px;
+margin-top: 10px;
+transition: .5s ease;
+}
+
+/* que las personas al presionar el icono, se agrande un poco*/
+.social-icons a:hover i{
+    transform: scale(1.2);
+}
+
+
+/* */
+.container .logreg-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+ width: 42% ;
+ height: 100%;
+}
+
+
+.logreg-box .form-box {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+background: transparent;
+backdrop-filter: blur(50px);
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+color: rgb(255, 255, 255);
+}
+
+.form-box h2{
+    height: 20%;
+font-size: 27px;
+text-align: center;
+}
+
+.logreg-box .input-box {
+position: relative;
+width: 65%;
+height: 45px;
+background: transparent;
+margin: 15px;
+}
+
+.input-box input {
+width: 140%;
+height: 70%;
+background: transparent;
+border: none;
+outline: none;
+border: 0.5px solid rgba(255, 255, 255, 255);
+border-radius: 20px;
 color: white;
 }
-ul li {
-display: inline-block;
-padding: 0px 20px;
+
+.input-box input::placeholder{
+align-items: center;
+color: white;
+opacity: 50%;
 }
-a { 
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+
+.input-box i {
+right: -50px;
+position: absolute;
+top: 50%;
+transform: translateY(-80%);
+font-size: 20px;
 }
-a:hover {
-color: rgb(202, 47, 0);
+
+.logreg-box .btn {
+width: 100%;
+height: auto;
+background: white;
+border: none;
+outline: none;
+border-radius: 20px;
+box-shadow: 0 0 5px black;
+cursor: pointer;
+font-size: 16px;
+color: #333;
+font-weight: 600;
 }
