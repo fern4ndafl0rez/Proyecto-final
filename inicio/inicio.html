@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Patacomania : El sabor que nunca olvidas </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="inicio.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
     <header class="header">
       <!-- Inicio NAV-->
       <nav class="menu">
-        <a href="index.html">Inicio</a>
+        <a href="inicio.html">Inicio</a>
         <a href="#">Nosotros</a>
         <a href="#">Contacto</a>
       </nav>
@@ -42,48 +42,41 @@
           <div class="textoo"></div>
           <p>¡Solo un paso más! Registra tus datos y haz tu pedido al instante.</p>
           <div class="social-icons">
-            <a href="https://w.app/wasZ7c" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-            <a href="https://www.instagram.com/yoongixsoftie_/" target="_blank"><i class='bx bxl-instagram'></i></a>
-            <a href="https://www.tiktok.com/@08.03.93_" target="_blank"><i class='bx bxl-tiktok'></i></a>
-            <a href="https://www.facebook.com/fernanda.florez.353/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
           </div>
         </div>
       </div>
       <div class="logreg-box">
         <div class="form-box login">
-          <form id="registerForm">
-            <h2> Registrarme</h2>
+          <form id="loginForm">
+            <h2>Iniciar Sesion</h2>
             <div class="input-box">
               <span class="icon"><i class='bx bx-user-circle'></i></span>
-              <input type="name" id="username" required placeholder="Nombre">
-            </div>
-            <div class="input-box">
-              <span class="icon"><i class='bx bx-edit-alt'></i></span>
-              <input type="last-name" placeholder="Apellidos" id="Apellidos" required>
-            </div>
-            <div class="input-box">
-              <span class="icon"><i class='bx bxs-group'></i></span>
-              <input type="genero" placeholder="Género" id="genero" required>
+              <input type="name" required placeholder="Nombre">
             </div>
             <div class="input-box">
               <span class="icon"> <i class='bx bxs-envelope'></i></span>
-              <input type="email" placeholder="Correo Electronico" id="correo" required>
+              <input type="email" placeholder="Correo Electronico" id="email" required>
             </div>
             <div class="input-box">
               <span class="icon"><i class='bx bx-lock-alt'></i> </span>
-              <input type="password" id="password" placeholder="Contraseña" required>
+              <input type="password" id="passwordd" placeholder="Contraseña" required>
             </div>
             <span>
-              <a href="inicio/inicio.html"><button class="btn" type="submit">Registrarme</button></a>
-              <p id="registerMessage"></p>
+              <button class="btn" type="submit">Hacer mi pedido</button>
+              <p class="loginMessage"></p>
           </form>
         </div>
         </form>
       </div>
+
+
     </div>
 
     </div>
   </section>
-<script src="./scripts.js"></script>
+  <script src="/Proyecto-final/validacion.js"></script>
 </body>
-</html>
