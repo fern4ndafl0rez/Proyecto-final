@@ -5,6 +5,7 @@ body{
     width: 100%;
 }
 
+
 :root {
 	--primary-color:#fc4c00;
 	--background-color: #f9f5f0;
@@ -41,7 +42,7 @@ html {
 /*               HEADER               */
 /* ********************************** */
 .container-hero {
-	background-color: var(--primary-color);
+	background: #ff4e02ec
 }
 
 .hero {
@@ -64,53 +65,41 @@ html {
 .content-customer-support {
 	display: flex;
 	flex-direction: column;
+	color: white;
+	font-size: 2rem;
 }
 
-.container-logo {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
-}
-
-.container-logo i {
-	font-size: 3rem;
-}
-
-.container-logo h1 a {
-	text-decoration: none;
-	color: #000;
-	font-size: 3rem;
-	text-transform: uppercase;
-	letter-spacing: -1px;
-}
 
 .container-user {
+	font-size: 12px;
 	display: flex;
 	gap: 1rem;
 	cursor: pointer;
+	color: white;
 }
 
-.container-user .fa-user {
+.container-user .bxs-user {
 	font-size: 3rem;
-	color: var(--primary-color);
+	color: white;
 	padding-right: 2.5rem;
 	border-right: 1px solid #e2e2e2;
 }
 
-.container-user .fa-basket-shopping {
+.container-user .bx-basket {
 	font-size: 3rem;
-	color: var(--primary-color);
+	color: white;
 	padding-left: 1rem;
 }
 
 .content-shopping-cart {
 	display: flex;
 	flex-direction: column;
+
 }
 
 /* ************* NAVBAR ************* */
 .container-navbar {
-	background-color: var(--primary-color);
+	background-color: #fa4b00
 }
 
 .navbar {
@@ -422,6 +411,7 @@ font-style: italic;
 /*            TOP PRODUCTS            */
 /* ********************************** */
 .top-products {
+	margin-top: 3%;
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
@@ -619,3 +609,105 @@ font-style: italic;
 	margin-bottom: 3px;
 }
 
+/*reseñas*/
+/* Contenedor principal de testimonios */
+.testimonials-section {
+	margin-top: -55px;
+    padding: 60px 20px;
+    background: #fcfcfd;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+/* Grid de testimonios */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 11px;
+}
+
+/* Tarjeta individual de testimonio */
+.testimonial-card {
+    background: rgb(250, 84, 24);
+    border: 1px solid rgba(252, 76, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(252, 76, 0, 0.1);
+}
+
+/* Imagen de perfil */
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    overflow: hidden;
+    border: 2px solid #ffffff;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estrellas */
+.stars {
+    color: #fce300;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Texto del testimonio */
+.testimonial-text {
+    color: #ffffff;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Nombre del autor */
+.author-name {
+    color: #ff986b;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Cargo del autor */
+.author-title {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
