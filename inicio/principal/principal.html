@@ -19,7 +19,7 @@
 					<div class="customer-support">
 						<i class="fa-solid fa-headset"></i>
 						<div class="content-customer-support">
-							<span class="text">Bienvenid@! , &nbsp;  </span>
+							<span class="text" id="saludo"></span>
 						</div>
 					</div>
 
@@ -242,60 +242,176 @@
 				<div class="section-title">
 					<h2>Reseñas de Nuestros Clientes</h2>
 				</div>
+					<div class="slider-container">
+					  <button class="slider-arrow prev" onclick="moveSlide(-1)">
+						<i class='bx bx-chevron-left'></i>
+					  </button>
+					  
+					  <div class="slider-track">
+						<div class="testimonial-slide active">
+						  <div class="testimonial-card">
+							<i class="fas fa-quote-left quote-mark"></i>
+							<img src="images2/persona1.jpeg" alt="Doe John" class="profile-img">
+							<div class="stars">
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+							</div>
+							<p class="testimonial-text">En Patacomania encontré el equilibrio perfecto entre calidad y sabor. Los patacones son crujientes, los rellenos bien sazonados, y siempre es una experiencia deliciosa.</p>
+							<h3 class="client-name">Sofía Herrera</h3>
+							<p class="client-position">Diseñadora Gráfica</p>
+						  </div>
 				
-				<div class="testimonials-grid">
-					<!-- Testimonio 1 -->
-					<div class="testimonial-card">
-						<div class="profile-image">
-							<img src="images2/persona1.jpg" alt="Nombre del cliente">
+						  <div class="testimonial-card">
+							<i class="fas fa-quote-left quote-mark"></i>
+							<img src="images2/persona2.jpeg" alt="John Doe" class="profile-img">
+							<div class="stars">
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+							</div>
+							<p class="testimonial-text">Entre turnos largos y poco tiempo para comer bien, Patacomania es mi mejor opción. Los patacones son deliciosos y siempre me hacen sentir como en casa. ¡Súper recomendado!</p>
+							<h3 class="client-name">Laura Ríos</h3>
+							<p class="client-position">Enfermera</p>
+						  </div>
+				
+						  <div class="testimonial-card">
+							<i class="fas fa-quote-left quote-mark"></i>
+							<img src="images2/persona3.jpeg" alt="Doe Boe" class="profile-img">
+							<div class="stars">
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+							</div>
+							<p class="testimonial-text">Nada como unos patacones bien rellenos después de un largo día de estudios. Son una delicia y super accesibles, perfecto para estudiantes como yo que buscan algo rico y contundente.</p>
+							<h3 class="client-name">Daniel Vargas</h3>
+							<p class="client-position">Estudiante de Ingeniería</p>
+						  </div>
 						</div>
-						<div class="stars">
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
+				
+						<div class="testimonial-slide">
+						  <!-- Segunda página de testimonios similar a la primera -->
+						  <div class="testimonial-card">
+							<i class="fas fa-quote-left quote-mark"></i>
+							<img src="images2/persona4.jpeg" alt="Jane Doe" class="profile-img">
+							<div class="stars">
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+							</div>
+							<p class="testimonial-text">La combinación de sabores y la presentación de los patacones son impresionantes, perfectos para fotos y aún mejores para el paladar. Un sitio que captura la esencia local en cada plato.</p>
+							<h3 class="client-name">Ana López</h3>
+							<p class="client-position">Fotógrafa</p>
+						  </div>
+				
+						  <div class="testimonial-card">
+							<i class="fas fa-quote-left quote-mark"></i>
+							<img src="images2/img4.jpg" alt="Bob Smith" class="profile-img">
+							<div class="stars">
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+							</div>
+							<p class="testimonial-text">Con la agenda siempre llena, encontrar un sitio como Patacomania es un lujo. Los patacones son deliciosos y se ajustan perfecto a mis pausas. ¡Es el toque de sabor que necesito para seguir con energía!</p>
+							<h3 class="client-name">Camila Fuentes</h3>
+							<p class="client-position">Maquilladora Profesional</p>
+						  </div>
+				
+						  <div class="testimonial-card">
+							<i class='bx bx-chevron-left'></i>
+							<img src="images2/img5.jpg" alt="Sarah Johnson" class="profile-img">
+							<div class="stars">
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+								<i class='bx bxs-star'></i>
+							</div>
+							<p class="testimonial-text">Como estilista, siempre ando de un lado a otro, y los patacones de Patacomanía son perfectos para recargar energías. Son frescos, sabrosos, y tienen un sabor casero que encanta.</p>
+							<h3 class="client-name">Valentina Ruiz</h3>
+							<p class="client-position">Estilista</p>
+						  </div>
 						</div>
-						<p class="testimonial-text">En Patacomania encontré el equilibrio perfecto entre calidad y sabor. Los patacones son crujientes, los rellenos bien sazonados, y siempre es una experiencia deliciosa. Ideal para un break creativo.</p>
-						<h3 class="author-name">Sofía Herrera</h3>
-						<p class="author-title">Diseñadora Gráfica</p>
+					  </div>
+				
+					  <button class="slider-arrow next" onclick="moveSlide(1)">
+						<i class='bx bx-chevron-right'></i>
+					  </button>
+				
+					  <div class="slider-dots">
+						<div class="dot active" onclick="goToSlide(0)"></div>
+						<div class="dot" onclick="goToSlide(1)"></div>
+
+					  </div>
 					</div>
-			
-					<!-- Testimonio 2 -->
-					<div class="testimonial-card">
-						<div class="profile-image">
-							<img src="images2/persona2" alt="Nombre del cliente">
-						</div>
-						<div class="stars">
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-						</div>
-						<p class="testimonial-text">La combinación de sabores y la presentación de los patacones son impresionantes, perfectos para fotos y aún mejores para el paladar. Un sitio que captura la esencia local en cada plato.</p>
-						<h3 class="author-name">Lina Ramírez</h3>
-						<p class="author-title"> Fotógrafa</p>
-					</div>
-			
-					<!-- Testimonio 3 -->
-					<div class="testimonial-card">
-						<div class="profile-image">
-							<img src="images2/persona3.jpg" alt="Nombre del cliente">
-						</div>
-						<div class="stars">
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-							<i class='bx bxs-star'></i>
-						</div>
-						<p class="testimonial-text">Nada como unos patacones bien rellenos después de un largo día de estudios. Son una delicia y super accesibles, perfecto para estudiantes como yo que buscan algo rico y contundente.</p>
-						<h3 class="author-name">Daniel Vargas</h3>
-						<p class="author-title">Estudiante de Ingeniería</p>
-					</div>
+				  </div>
+		<section class="direcciones-section">
+		<div class="section-title">
+			<h2>¿Dónde puedes encontrarnos?</h2>
+		</div>
+        <div class="ubicacion">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15931.162355046506!2d-76.51539951764738!3d3.4012019652266896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a12a5455ecc5%3A0x2a4d3e9c4522b92c!2sCiudad%20Cordoba%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1730593630916!5m2!1ses!2sco" width="380" height="300"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7965.181893868976!2d-76.50466396255885!3d3.449188245546503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a7acaf86581b%3A0x92c7a101e4418e60!2sVillacolombia%2C%20Comuna%208%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1730570957469!5m2!1ses!2sco" width="380" height="300"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.646707307677!2d-76.54812102596601!3d3.4358529513252956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a68310300075%3A0xd88e534efc39f505!2sParque%20Del%20Perro!5e0!3m2!1ses!2sco!4v1730593754162!5m2!1ses!2sco" width="380" height="300"></iframe>
+		</div>
+	</section>
+
+
+	<section class="faq-preguntas">
+			<h2 class="titulo">FAQ (Preguntas Frecuentes)</h2>
+			<div class="faq-container">
+				<div class="faq-item">
+				  <div class="faq-question">
+					<span>¿Cuáles son sus horarios de atención?</span>
+					<div class="faq-arrow"></div>
+				  </div>
+				  <div class="faq-answer">
+					Estamos disponibles para atenderte todos los días de 1:00 p.m. a 11:00 p.m. Durante este horario, puedes realizar pedidos y disfrutar de nuestros patacones frescos y llenos de sabor. ¡Esperamos servirte pronto!
+				  </div>
 				</div>
-			</section>
+			
+				<div class="faq-item">
+				  <div class="faq-question">
+					<span>¿Cómo puedo realizar un pedido y cuál es el tiempo estimado de entrega?</span>
+					<div class="faq-arrow"></div>
+				  </div>
+				  <div class="faq-answer">
+					Puedes realizar tu pedido a través de nuestra página web o llamándonos directamente. Una vez que completes tu pedido, te confirmaremos el tiempo de entrega, que generalmente es de 30 a 60 minutos, dependiendo de tu ubicación y la demanda del momento.
+				  </div>
+				</div>
+			
+				<div class="faq-item">
+				  <div class="faq-question">
+					<span>¿Ofrecen opciones de envío a domicilio y cuáles son los costos asociados?</span>
+					<div class="faq-arrow"></div>
+				  </div>
+				  <div class="faq-answer">
+				Sí, ofrecemos envío a domicilio en áreas seleccionadas. El costo de envío varía según la distancia y el total de tu pedido. Durante el proceso de pago, podrás ver el costo de envío exacto antes de confirmar tu pedido.
+				  </div>
+				</div>
+			
+				<div class="faq-item">
+				  <div class="faq-question">
+					<span>¿Qué métodos de pago aceptan y cómo puedo pagar mi pedido?</span>
+					<div class="faq-arrow"></div>
+				  </div>
+				  <div class="faq-answer">
+					Aceptamos varios métodos de pago para tu comodidad, incluyendo tarjetas de crédito y débito, PayPal y pago en efectivo al recibir tu pedido. Durante el proceso de pago, podrás seleccionar el método que prefieras.
+				  </div>
+				</div>
+			  </div>
+	</section>
+  <script src="principal.js"></script>
 </body>
 </html>
 
