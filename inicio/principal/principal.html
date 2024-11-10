@@ -5,9 +5,12 @@
     <title>Patacomania : El sabor que nunca olvidas </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="principal.css">
+      <link rel="stylesheet" href="responsive.css">
+	  <link rel="stylesheet" href="menucarrito.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" href="https://i.ibb.co/bQV76Tb/pixelcut-export-1.png" type="image/x-icon">
 </head>
@@ -17,7 +20,6 @@
 			<div class="container-hero">
 				<div class="container hero">
 					<div class="customer-support">
-						<i class="fa-solid fa-headset"></i>
 						<div class="content-customer-support">
 							<span class="text" id="saludo"></span>
 						</div>
@@ -25,17 +27,27 @@
 
 					<div class="container-user">
 						<i class='bx bxs-user'></i>
-						<i class='bx bx-basket'></i>
+						<i class='bx bx-basket' id="agregarcarrito"></i>
 						<div class="content-shopping-cart">
 							<span class="text">Carrito</span>
 							<span class="number">(0)</span>
+							<div id="listacarrito" class="menucarrito">
+								<ul>
+                                
+								</ul>
+								<div id="cerrarcarrito"><i class='bx bx-x'></i></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</header>
 
 
-		<header class="header">
+		<div class="menu-toggle">
+			<i class="fas fa-bars"></i>
+		</div>
+		
 			<div class="container-navbar">
 			  <nav class="navbar container">
 				<ul class="menu">
@@ -43,7 +55,7 @@
 				  <li><a href="#">Nosotros</a></li>
 				  <li><a href="#">Contacto</a></li>
 				  <li><a href="#">Productos</a></li>
-				  <li><a href="#">Cerrar Sesion</a></li>
+				  <li><a href="cierre/cierre.html">Cerrar Sesion</a></li>
 				</ul>
 				<!-- Barra de búsqueda -->
 				<form action="#" class="search-form">
@@ -53,8 +65,7 @@
 				  </button>
 				</form>
 			  </nav>
-			</div>
-		  </header>		  
+			</div>	  
 
 		<section class="banner">
 	
@@ -67,7 +78,7 @@
 				<a href="#">HACER MI PEDIDO AHORA</a>
 			</div>
 		</section>
-
+<br>
 		<main class="main-content">
 			<section class="container container-features">
 				<div class="card-feature">
@@ -99,7 +110,7 @@
 					</div>
 				</div>
 			</section>
-
+<br>
 			<section class="container top-categories">
 				<h1 class="heading-1">Sabores Únicos, Ingredientes Frescos: Bienvenidos a Patacomanía</h1>
                 <p> Bienvenido a Patacomanía, una empresa que nace del amor por la cocina tradicional y el deseo de ofrecer un producto innovador que combine lo mejor de la tradición caribeña con un toque moderno y urbano. En Patacomanía, somos especialistas en una auténtica delicia: los patacones rellenos. Pero no nos detenemos ahí, también hemos perfeccionado la fórmula para hacer de cada plato una experiencia gastronómica única, siempre usando ingredientes frescos y locales que garantizan la mejor calidad en cada bocado.</p>
@@ -123,7 +134,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="container top-products">
+			<section class="container top-products" id="productos">
 				<h1 class="heading-1">Nuestros Productos</h1>
 				<div class="container-options">
 					<span class="active">Destacados</span>
@@ -131,13 +142,14 @@
 					<span>Todas las opciones</span>
 				</div>
 
-				<div class="wrapper">
+				<div class="wrapper"  id="contenedor">
 					<div class="card">
 						<img src="images2/maxresdefault.jpg" alt="">
 						<div class="info">
 							<h1>Patacon Supremo</h1>
 							<p>Una explosión de sabores: carne, pollo, aguacate, queso, cebolla y tomate, todo sobre un patacón dorado y crujiente, cubierto con nuestras irresistibles salsas. Una opción completa para los que buscan algo más.</p>
-							<a href="#" class="btn">Hacer mi pedido</a>
+							<button class="btn" type="submit">Agregar al Carrito</button>
+							<span class="price">&nbsp;&nbsp;&nbsp;$20.000</span>
 						</div>
 					</div>
 					<div class="card">
@@ -145,7 +157,8 @@
 						<div class="info">
 							<h1>Patacón Tradicional</h1>
 							<p>Un patacón crujiente y personalizable. Elige tu proteína favorita y combínala con nuestras salsas para disfrutar de un sabor auténtico y sencillo.</p>
-							<a href="#" class="btn">Hacer mi pedido</a>
+							<button class="btn" type="submit">Agregar al Carrito</button>
+							<span class="price">&nbsp;&nbsp;&nbsp;$10.000</span>
 						</div>
 					</div>
 					<div class="card">
@@ -153,7 +166,8 @@
 						<div class="info">
 							<h1>Patacón Mixto</h1>
 							<p>La combinación perfecta: carne, pollo y queso sobre un crujiente patacón, acompañado de nuestras salsas especiales. Ideal para quienes quieren probarlo todo en un solo bocado.</p>
-							<a href="#" class="btn">Hacer mi pedido</a>
+							<button class="btn" type="submit">Agregar al Carrito</button>
+							<span class="price">&nbsp;&nbsp;&nbsp;$15.000</span>
 						</div>
 					</div>
 					<div class="card">
@@ -161,7 +175,8 @@
 						<div class="info">
 							<h1>Patacón Salchipapa</h1>
 							<p>Deléitate con nuestro patacón crujiente, que combina la textura perfecta con un delicioso relleno de papas fritas doradas y salchichas jugosas. ¡Una opción deliciosa que no te puedes perder!</p>
-							<a href="#" class="btn">Hacer mi pedido</a>
+							<button class="btn" type="submit">Agregar al Carrito</button>
+							<span class="price">&nbsp;&nbsp;&nbsp;$8.000</span>
 						</div>
 					</div>
 				</div>
@@ -174,21 +189,21 @@
 					<div class="cardd">
 						<img src="images2/fosforitos.png" alt="">
 						<div class="info">
-							<h1>Ripio</h1>
+							<h1>Ripio<span class="price">( $2.500 )</span></h1>
 							<p>Crujientes papitas fritas, ideales para añadir un toque extra de textura y sabor a tus patacones.</p>
 						</div>
 					</div>
 					<div class="cardd">
 						<img src="images2/tocineta" alt="">
 						<div class="info">
-							<h1>Tocineta</h1>
+							<h1>Tocineta<span class="price">( $5.000 )</span></h1>
 							<p>Deliciosas tiras de tocino fritas, que aportan un sabor ahumado y salado, elevando la experiencia de cada bocado. </p>
 						</div>
 					</div>
 					<div class="cardd">
 						<img src="images2/aguacate.jpg" alt="">
 						<div class="info">
-							<h1>Aguacate</h1>
+							<h1>Aguacate<span class="price">( $2.000 )</span></h1>
 							<p>Rodajas frescas de aguacate cremoso, que aportan suavidad y un sabor fresco, complementando perfectamente los sabores de los patacones.</p>
 						</div>
 					</div>
@@ -196,42 +211,42 @@
 					<div class="cardd">
 						<img src="images2/maiz" alt="">
 						<div class="info">
-							<h1>Maicitos</h1>
+							<h1>Maicitos<span class="price">( $3.000 )</span></h1>
 							<p>Granos de maíz crocantes y dorados, que añaden un toque crujiente y un sabor dulce, ideales para dar un giro a tus patacones.</p>
 						</div>
 					</div>
 					<div class="cardd">
 						<img src="images2/descarga.webp" alt="">
 						<div class="info">
-							<h1>Queso mozzarella</h1>
+							<h1>Mozzarella<span class="price">( $6.500 )</span></h1>
 							<p> Suave y fundente, el queso mozzarella se derrite en la boca, añadiendo cremosidad y un sabor lácteo delicioso.</p>
 						</div>
 					</div>
 					<div class="cardd">
 						<img src="images2/chorizo.jpg" alt="">
 						<div class="info">
-							<h1>Chorizo</h1>
+							<h1>Chorizo<span class="price">( $5.000 )</span></h1>
 							<p>Picante y jugoso, el chorizo le da un sabor robusto y característico a tus patacones, ideal para los amantes de la carne.</p>
 						</div>
 					</div>
 					<div class="cardd">
 						<img src="images2/hogao" alt="">
 						<div class="info">
-							<h1>Hogao</h1>
+							<h1>Hogao<span class="price">( $2.000 )</span></h1>
 							<p>Salsa típica colombiana hecha a base de tomate y cebolla, que aporta frescura y un toque de sabor casero a tus platos.</p>
 						</div>
 					</div>
 					<div class="cardd">
 						<img src="images2/chicharrones.jpg" alt="">
 						<div class="info">
-							<h1>Chicharron</h1>
+							<h1>Chicharron<span class="price">( $8.000 )</span></h1>
 							<p>Crujiente y sabroso, el chicharrón es el complemento perfecto para los patacones, brindando un contraste irresistible de texturas y sabores.</p>
 						</div>
 					</div>
 					<div class="cardd">
 						<img src="images2/mayonesa.jpg" alt="">
 						<div class="info">
-							<h1>Mayonesa Picante</h1>
+							<h1>Mayo-Picante<span class="price">( $2.000 )</span></h1>
 							<p>Cremosa y con un toque de picante, esta mayonesa es el complemento ideal para realzar el sabor de tus patacones con una explosión de sabor.</p>
 						</div>
 				</div>
@@ -308,7 +323,6 @@
 			  <div class="slider-track">
 				<div class="testimonial-slide active">
 				  <div class="testimonial-card">
-					<i class="fas fa-quote-left quote-mark"></i>
 					<img src="images2/persona1.jpeg" alt="Doe John" class="profile-img">
 					<div class="stars">
 						<i class='bx bxs-star'></i>
@@ -323,7 +337,6 @@
 				  </div>
 		
 				  <div class="testimonial-card">
-					<i class="fas fa-quote-left quote-mark"></i>
 					<img src="images2/persona2.jpeg" alt="John Doe" class="profile-img">
 					<div class="stars">
 						<i class='bx bxs-star'></i>
@@ -338,7 +351,6 @@
 				  </div>
 		
 				  <div class="testimonial-card">
-					<i class="fas fa-quote-left quote-mark"></i>
 					<img src="images2/persona3.jpeg" alt="Doe Boe" class="profile-img">
 					<div class="stars">
 						<i class='bx bxs-star'></i>
@@ -356,7 +368,6 @@
 				<div class="testimonial-slide">
 				  <!-- Segunda página de testimonios similar a la primera -->
 				  <div class="testimonial-card">
-					<i class="fas fa-quote-left quote-mark"></i>
 					<img src="images2/persona4.jpeg" alt="Jane Doe" class="profile-img">
 					<div class="stars">
 						<i class='bx bxs-star'></i>
@@ -371,7 +382,6 @@
 				  </div>
 		
 				  <div class="testimonial-card">
-					<i class="fas fa-quote-left quote-mark"></i>
 					<img src="images2/img4.jpg" alt="Bob Smith" class="profile-img">
 					<div class="stars">
 						<i class='bx bxs-star'></i>
@@ -445,6 +455,7 @@
 				<p>©2024 Fernanda Florez | Todos los derechos reservados</p>
             </footer>
   <script src="principal.js"></script>
+  <script src="menu.js"></script>
+  <script src="carritodecompras.js"></script>
 </body>
 </html>
-

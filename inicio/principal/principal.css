@@ -612,6 +612,7 @@ font-style: italic;
 /*reseñas*/
 
 .testimonials-container {
+	margin-bottom: 40%;
 	margin-bottom: 50%;
 	max-width: 1500px;
 	padding: 40px 20px;
@@ -694,6 +695,7 @@ font-style: italic;
 
   .testimonial-text {
 	color: #ffffff;
+	font-size: 0.9em;
 	font-size: 12px;
 	line-height: 1.6;
 	margin: 15px 0;
@@ -702,12 +704,14 @@ font-style: italic;
   .client-name {
 	color: #ffffff;
 	font-weight: bold;
+	margin: 5px 0;
 	font-size: 11px;
 	margin: 3px 0;
   }
 
   .client-position {
 	color: #f0ece4c4;
+	font-size: 0.8em;
 	font-size: 9px;
   }
 
@@ -768,9 +772,10 @@ font-style: italic;
 
 
 .direcciones-section {
+	margin-bottom:30px ;
 	margin-bottom:30 ;
 	text-align: center;
-	
+
 }
 .section-title {
     text-align: center;
@@ -859,7 +864,6 @@ margin-bottom: -30px;
         grid-template-columns: 1fr;
     }
 }
-
 footer {
 	position: relative;
 	width: 100%;
@@ -881,12 +885,10 @@ align-items: center;
 margin: 10px 0;
 flex-wrap: wrap;
 }
-
 footer .socialicon li,
 footer .menu li {
 	list-style: none;
 }
-
 footer .socialicon li a {
 	font-size: 27px;
  margin-right: 10px;
@@ -896,12 +898,9 @@ footer .socialicon li a {
 	margin: 0 10px;
 	display: inline-block;
 }
-
 footer .socialicon li a:hover {
 	transform: translateY(-10px);
 }
-
-
 footer .menu li a {
 	font-size: 1.6em;
 	color: white;
@@ -910,20 +909,16 @@ footer .menu li a {
 	transition: 0.5;
 	text-decoration: none;
 }
-
 footer .menu li a:hover {
 	opacity: 1;
 }
-
 footer p {
  color: white;
  text-align: center;
  margin-top: 15px;
  margin-bottom: 10px;
  font-size: 1.2em;
-
 }
-
 footer .wave {
 	position: absolute;
 	top: -100px;
@@ -932,80 +927,115 @@ footer .wave {
 	background:url(images2/onda.png);
 	background-size: 1000px 100px;
 }
-
 footer .wave#wave1 {
 	z-index: 1000;
 	opacity: 0.9;
 	bottom: 90%;
 	animation: animateWave 4s linear infinite;
 }
-
 footer .wave#wave2 {
 	z-index: 999;
 	opacity: 0.5;
 	bottom: 90%;
 	animation: animateWave_02 4s linear infinite;
 }
-
-
 footer .wave#wave3 {
 	z-index: 1000;
 	opacity: 0.3;
 	bottom: 90%;
 	animation: animateWave_03 3s linear infinite;
 }
-
 footer .wave#wave3 {
 	z-index: 999;
 	opacity: 0.4;
 	bottom: 90%;
 	animation: animateWave_04 3s linear infinite;
 }
-
-
 @keyframes animateWave {
 	0%
 	{
 		background-position-x: 1000px; 
 	}
-
 	100% {
 		background-position-x :0px; 
 	}
 }
-
-
 @keyframes animateWave_02 {
 	0%
 	{
 		background-position-x: 0px; 
 	}
-
 	100% {
 		background-position-x:0px; 
 	}
 }
-
-
 @keyframes animateWave_03 {
 	0%
 	{
 		background-position-x: 1000px; 
 	}
-
 	100% {
 		background-position-x :0px; 
 	}
 }
-
 @keyframes animateWave_04 {
 	0%
 	{
 		background-position-x: 1000px; 
 	}
-
 	100% {
 		background-position-x :0px; 
 	}
 }
+
+/* Estilo base para el menú principal */
+.main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li {
+    margin-right: 20px;
+}
+
+/* Ocultar el botón del menú hamburguesa por defecto */
+.menu-toggle {
+    display: none;
+}
+
+/* Media query para dispositivos móviles (menos de 768px) */
+@media screen and (max-width: 768px) {
+    .main-menu {
+        display: none; /* Oculta el menú horizontal en móviles */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .main-menu.active {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
+
+    .main-menu li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón hamburguesa solo en móviles */
+    }
+}
+
+/* Estilos para pantallas grandes (más de 768px) */
+@media screen and (min-width: 769px) {
+    .main-menu {
+        display: flex !important; /* Fuerza la visualización del menú en desktop */
+    }
+}
+
 

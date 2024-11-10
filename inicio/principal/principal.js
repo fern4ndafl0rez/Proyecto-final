@@ -38,9 +38,6 @@ function updateSlider() {
   });
 }
 
-// Opcional: Autoplay
-setInterval(() => moveSlide(1), 5000);
-
 
 document.querySelectorAll('.faq-question').forEach(question => {
     question.addEventListener('click', () => {
@@ -60,3 +57,9 @@ document.querySelectorAll('.faq-question').forEach(question => {
       });
     });
   });
+
+/*=================*/
+const header = document.querySelector ("#header");
+const contenedor = document.querySelector ("#contenedor")
+const body = document.querySelector ("body")
+

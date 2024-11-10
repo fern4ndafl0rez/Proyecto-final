@@ -7,7 +7,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-image: url("images/istockphoto-1264642962-612x612\ \(1\).jpg");
+    background-image: url("images3/istockphoto-1264642962-612x612\ \(1\).jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -26,7 +26,8 @@ body {
 }
 
 .menu a {
-    position: relative;
+left: -80px;
+position: relative;
 font-size: 16px;
 color: rgb(255, 255, 255);
 text-decoration: none;
@@ -109,7 +110,7 @@ left: 50%;
 transform: translate(-50%,-50%);
 width: 80%;
 height: 480px;
-background: url("istockphoto-1264642962-612x612\ \(1\).jpg") no-repeat;
+background: url("images3/istockphoto-1264642962-612x612\ \(1\).jpg") no-repeat;
 background-size: cover;
 background-position: center;
 border-radius: 10px;
@@ -139,13 +140,13 @@ margin-top: 20px;
 
 .text-sci h2 {
 
-    font-size: 40px;
+    font-size: 33px;
     line-height: 1;
 }
 
 .text-sci h2 span {
 
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .text-sci p {
@@ -249,3 +250,4 @@ font-size: 20px;
     color: #333;
     font-weight: 600;
     }
+    
