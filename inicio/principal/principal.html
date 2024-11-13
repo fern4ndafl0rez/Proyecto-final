@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="utf-8">
     <title>Patacomania : El sabor que nunca olvidas </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="principal.css">
-      <link rel="stylesheet" href="responsive.css">
-	  <link rel="stylesheet" href="menucarrito.css">
+    <link rel="stylesheet" href="responsive.css">
+	<link rel="stylesheet" href="menucarrito.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" href="https://i.ibb.co/bQV76Tb/pixelcut-export-1.png" type="image/x-icon">
-</head>
+ </head>
 	<body>
-
+	  <!--HEADER/SALUDO -->
 		<header>
 			<div class="container-hero">
 				<div class="container hero">
@@ -24,40 +24,52 @@
 							<span class="text" id="saludo"></span>
 						</div>
 					</div>
-
+          <!--HEADER/CARRITO -->
 					<div class="container-user">
 						<i class='bx bxs-user'></i>
 						<i class='bx bx-basket' id="agregarcarrito"></i>
 						<div class="content-shopping-cart">
-							<span class="text">Carrito</span>
-							<span class="number">(0)</span>
-							<div id="listacarrito" class="menucarrito">
-								<ul>
+						  <span class="text">Carrito</span>
+					      <div class="contador">
+							<p> (&nbsp;  </p><span class="number" id="contador">0</span><p>&nbsp;)</p>
+						 </div>
+						    <div id="listacarrito" class="menucarrito">
+								<div id="cerrarcarrito"><i class='bx bx-x-circle'></i></div>
+								<ul id="carrito-items">
                                 
 								</ul>
-								<div id="cerrarcarrito"><i class='bx bx-x'></i></div>
+								<div id="total-carrito" class="total">Total: $0</div>
+								<button id="vaciar-carrito" class="vaciar-btn">Vaciar Carrito</button>
+								<img class="inline imagen-primer-logo" src="images2/images__1_-removebg-preview.png" width="40px" height="40px">
+								<img class="inline imagen-segundo-logo" src="images2/paypal.png" width="40px" height="40px">
+								<img class="inline imagen-tercer-logo" src="images2/bancolombia-removebg-preview.png" width="20px" height="20px">
+								<img class="inline imagen-cuarto-logo" src="images2/tarjeta-removebg-preview.png" width="30px" height="30px">
+								<img class="inline imagen-quinto-logo" src="images2/7448246-removebg-preview.png" width="30px" height="30px">
+							<p>¡Estos son nuestros metodos de pago! Revisa tu pedido antes de proceder al pago. No se aceptan cambios ni reembolsos una vez confirmado.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
+       <!--HEADER/CIERRE -->
 
-
+	   <!--MENU DESPEGABLE EN DISPOSITIVOS -->
 		<div class="menu-toggle">
 			<i class="fas fa-bars"></i>
-		</div>
+	 </div>
 		
-			<div class="container-navbar">
+	   <!--MENU / BARRA BUSQUEDA -->
+		<div class="container-navbar">
 			  <nav class="navbar container">
 				<ul class="menu">
-				  <li><a href="#">Inicio</a></li>
-				  <li><a href="#">Nosotros</a></li>
-				  <li><a href="#">Contacto</a></li>
-				  <li><a href="#">Productos</a></li>
+				  <li><a href="#nosotros">Nosotros</a></li>
+				  <li><a href="#productos">Productos</a></li>
+				  <li><a href="#ubicaciones">Ubicaciones</a></li>
+				  <li><a href="#contacto">Contacto</a></li>
 				  <li><a href="cierre/cierre.html">Cerrar Sesion</a></li>
 				</ul>
-				<!-- Barra de búsqueda -->
+
 				<form action="#" class="search-form">
 				  <input type="search" placeholder="Buscar..." />
 				  <button class="btn-search">
@@ -65,20 +77,20 @@
 				  </button>
 				</form>
 			  </nav>
-			</div>	  
-
+		</div>	  
+	    <!--BANNER CON EL NOMBRE DE LA PAGINA Y FOTOGRAFIA -->
 		<section class="banner">
-	
-			
 			<div class="content-banner">
 				<img src="https://i.ibb.co/bQV76Tb/pixelcut-export-1.png">
 				<br>
 				<p>Deliciosos Patacones</p>
 				<h2>Patacomania : <br />El sabor que nunca olvidas . .</h2>
-				<a href="#">HACER MI PEDIDO AHORA</a>
+				<a href="#productos">HACER MI PEDIDO AHORA</a>
 			</div>
 		</section>
-<br>
+        <br>
+
+	     <!--CARACTERISTICAS DE LA EMPRESA -->
 		<main class="main-content">
 			<section class="container container-features">
 				<div class="card-feature">
@@ -110,7 +122,10 @@
 					</div>
 				</div>
 			</section>
-<br>
+            <br>
+
+			<!--SECCION NOSOTROS -->
+		    <section id="nosotros">
 			<section class="container top-categories">
 				<h1 class="heading-1">Sabores Únicos, Ingredientes Frescos: Bienvenidos a Patacomanía</h1>
                 <p> Bienvenido a Patacomanía, una empresa que nace del amor por la cocina tradicional y el deseo de ofrecer un producto innovador que combine lo mejor de la tradición caribeña con un toque moderno y urbano. En Patacomanía, somos especialistas en una auténtica delicia: los patacones rellenos. Pero no nos detenemos ahí, también hemos perfeccionado la fórmula para hacer de cada plato una experiencia gastronómica única, siempre usando ingredientes frescos y locales que garantizan la mejor calidad en cada bocado.</p>
@@ -120,20 +135,23 @@
                 <br>
 
 				<div class="container-categories">
-					<div class="card-category category-moca">
+					<div class="card-category category-mision">
 						<p>Mision</p>
 						<span>Ver más</span>
 					</div>
-					<div class="card-category category-expreso">
+					<div class="card-category category-nosotros">
 						<p>Nosotros</p>
 						<span>Ver más</span>
 					</div>
-					<div class="card-category category-capuchino">
+					<div class="card-category category-vision">
 						<p>Vision</p>
 						<span>Ver más</span>
 					</div>
 				</div>
 			</section>
+		    </section>
+			<!--PRODUCTOS -->
+			<section id="productos">
 			<section class="container top-products" id="productos">
 				<h1 class="heading-1">Nuestros Productos</h1>
 				<div class="container-options">
@@ -144,44 +162,47 @@
 
 				<div class="wrapper"  id="contenedor">
 					<div class="card">
-						<img src="images2/maxresdefault.jpg" alt="">
+						<img src="images2/maxresdefault.jpg" alt="Patacon Supremo">
 						<div class="info">
 							<h1>Patacon Supremo</h1>
 							<p>Una explosión de sabores: carne, pollo, aguacate, queso, cebolla y tomate, todo sobre un patacón dorado y crujiente, cubierto con nuestras irresistibles salsas. Una opción completa para los que buscan algo más.</p>
-							<button class="btn" type="submit">Agregar al Carrito</button>
+							<button class="btn"  data-producto="Patacon Supremo" data-precio="20000" type='submit'>Agregar al Carrito</button>
 							<span class="price">&nbsp;&nbsp;&nbsp;$20.000</span>
 						</div>
 					</div>
 					<div class="card">
-						<img src="images2/pataconess.jpg" alt="">
+						<img src="images2/pataconess.jpg" alt="Patacon Tradicional">
 						<div class="info">
 							<h1>Patacón Tradicional</h1>
 							<p>Un patacón crujiente y personalizable. Elige tu proteína favorita y combínala con nuestras salsas para disfrutar de un sabor auténtico y sencillo.</p>
-							<button class="btn" type="submit">Agregar al Carrito</button>
+							<button class="btn"  data-producto="Patacon Tradicional" data-precio="10000" type='submit'>Agregar al Carrito</button>
 							<span class="price">&nbsp;&nbsp;&nbsp;$10.000</span>
 						</div>
 					</div>
 					<div class="card">
-						<img src="images2/ii.jpg" alt="">
+						<img src="images2/ii.jpg" alt="Patacon Mixto">
 						<div class="info">
 							<h1>Patacón Mixto</h1>
 							<p>La combinación perfecta: carne, pollo y queso sobre un crujiente patacón, acompañado de nuestras salsas especiales. Ideal para quienes quieren probarlo todo en un solo bocado.</p>
-							<button class="btn" type="submit">Agregar al Carrito</button>
+							<button class="btn"  data-producto="Patacon Mixto" data-precio="15000"type='submit'>Agregar al Carrito</button>
 							<span class="price">&nbsp;&nbsp;&nbsp;$15.000</span>
 						</div>
 					</div>
 					<div class="card">
-						<img src="images2/yy.JPG" alt="">
+						<img src="images2/yy.JPG" alt="Patacon Salchipapa">
 						<div class="info">
 							<h1>Patacón Salchipapa</h1>
 							<p>Deléitate con nuestro patacón crujiente, que combina la textura perfecta con un delicioso relleno de papas fritas doradas y salchichas jugosas. ¡Una opción deliciosa que no te puedes perder!</p>
-							<button class="btn" type="submit">Agregar al Carrito</button>
+							<button class="btn" data-producto="Patacon Salchipapa" data-precio="8000" type='submit'>Agregar al Carrito</button>
 							<span class="price">&nbsp;&nbsp;&nbsp;$8.000</span>
 						</div>
 					</div>
 				</div>
-         <section class="specials">
-			<br>
+			</section>
+
+			<!--ESPECIALES Y ADICIONALES -->
+           <section class="specials">
+			    <br>
 				<h1 class="heading-1">Especiales & Adicionales</h1>
 				<br>
 				<br>
@@ -189,21 +210,21 @@
 					<div class="cardd">
 						<img src="images2/fosforitos.png" alt="">
 						<div class="info">
-							<h1>Ripio<span class="price">( $2.500 )</span></h1>
+							<h1>Ripio<span class="price"> &nbsp;( $2.500 )</span></h1>
 							<p>Crujientes papitas fritas, ideales para añadir un toque extra de textura y sabor a tus patacones.</p>
 						</div>
 					</div>
 					<div class="cardd">
 						<img src="images2/tocineta" alt="">
 						<div class="info">
-							<h1>Tocineta<span class="price">( $5.000 )</span></h1>
+							<h1>Tocineta<span class="price"> &nbsp;( $5.000 )</span></h1>
 							<p>Deliciosas tiras de tocino fritas, que aportan un sabor ahumado y salado, elevando la experiencia de cada bocado. </p>
 						</div>
 					</div>
 					<div class="cardd">
 						<img src="images2/aguacate.jpg" alt="">
 						<div class="info">
-							<h1>Aguacate<span class="price">( $2.000 )</span></h1>
+							<h1>Aguacate<span class="price"> &nbsp;( $2.000 )</span></h1>
 							<p>Rodajas frescas de aguacate cremoso, que aportan suavidad y un sabor fresco, complementando perfectamente los sabores de los patacones.</p>
 						</div>
 					</div>
@@ -211,7 +232,7 @@
 					<div class="cardd">
 						<img src="images2/maiz" alt="">
 						<div class="info">
-							<h1>Maicitos<span class="price">( $3.000 )</span></h1>
+							<h1>Maicitos<span class="price"> &nbsp;( $3.000 )</span></h1>
 							<p>Granos de maíz crocantes y dorados, que añaden un toque crujiente y un sabor dulce, ideales para dar un giro a tus patacones.</p>
 						</div>
 					</div>
@@ -251,7 +272,9 @@
 						</div>
 				</div>
 			</section>
-
+		</section>
+	   <!--UBICACIONES DEL LOCAL -->
+	   <section id="ubicaciones">
 		<section class="direcciones-section">
 		<div class="section-title">
 			<h2>¿Dónde puedes encontrarnos?</h2>
@@ -261,10 +284,11 @@
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7965.181893868976!2d-76.50466396255885!3d3.449188245546503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a7acaf86581b%3A0x92c7a101e4418e60!2sVillacolombia%2C%20Comuna%208%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1730570957469!5m2!1ses!2sco" width="380" height="300"></iframe>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.646707307677!2d-76.54812102596601!3d3.4358529513252956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a68310300075%3A0xd88e534efc39f505!2sParque%20Del%20Perro!5e0!3m2!1ses!2sco!4v1730593754162!5m2!1ses!2sco" width="380" height="300"></iframe>
 		</div>
+	  </section>
 	</section>
 
-
-	<section class="faq-preguntas">
+      <!--FAQ -->
+	  <section class="faq-preguntas">
 			<h2 class="titulo">FAQ (Preguntas Frecuentes)</h2>
 			<div class="faq-container">
 				<div class="faq-item">
@@ -307,11 +331,11 @@
 				  </div>
 				</div>
 			  </div>
-	</section>
+	 </section>
 
-	
-			    <br>
-	<section class="testimonials-section">
+	 <!--RESEÑAS -->
+	 <br>
+	 <section class="testimonials-section">
 		<div class="section-title">
 			<h2>Reseñas de Nuestros Clientes</h2>
 		</div>
@@ -366,7 +390,7 @@
 				</div>
 		
 				<div class="testimonial-slide">
-				  <!-- Segunda página de testimonios similar a la primera -->
+				  <!-- SEGUNDA PAGINA DE TESTIMONIOS -->
 				  <div class="testimonial-card">
 					<img src="images2/persona4.jpeg" alt="Jane Doe" class="profile-img">
 					<div class="stars">
@@ -410,9 +434,9 @@
 					<p class="client-position">Estilista</p>
 				  </div>
 				</div>
-			  </div>
-		
-			  <button class="slider-arrow next" onclick="moveSlide(1)">
+			</div>
+	        <!--BARRAS DE DESPLIEGUE -->
+			<button class="slider-arrow next" onclick="moveSlide(1)">
 				<i class='bx bx-chevron-right'></i>
 			  </button>
 		
@@ -424,14 +448,16 @@
 			</div>
 		  </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+		 <!--FOOTER -->
+		 <section id="contacto">
             <footer> 
 				<div class="waves">
 					<div class="wave" id="wave1"></div>
@@ -446,16 +472,16 @@
                   <li><a href="https://www.tiktok.com/@08.03.93_"><i class='bx bxl-tiktok' ></i></a></li>
                 </ul>
 				<ul class="menu">
-					<li><a href="#">Pagina Principal</a></li>
-					<li><a href="#">Nosotros</a></li>
-					<li><a href="#">Productos</a></li>
-					<li><a href="#">Ubicaciones</a></li>
-					<li><a href="#">Contacto</a></li>
+					<li><a href="#nosotros">Nosotros</a></li>
+					<li><a href="#productos">Productos</a></li>
+					<li><a href="#ubicaciones">Ubicaciones</a></li>
+					<li><a href="#contacto">Contacto</a></li>
 				</ul>
 				<p>©2024 Fernanda Florez | Todos los derechos reservados</p>
             </footer>
-  <script src="principal.js"></script>
-  <script src="menu.js"></script>
-  <script src="carritodecompras.js"></script>
-</body>
+		</section>
+        <script src="principal.js"></script>
+        <script src="menu.js"></script>
+        <script src="carritodecompras.js"></script>
+ </body>
 </html>

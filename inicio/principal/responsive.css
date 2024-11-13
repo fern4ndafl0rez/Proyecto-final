@@ -318,7 +318,7 @@
     /* Ajustar la imagen */
     .cardd img {
         border-radius: 30px;
-        width: 405px; /* Reducir un poco el tamaño */
+        width: 420px; /* Reducir un poco el tamaño */
         height: 220px;
         margin-right: 0; /* Eliminar margen derecho */
         margin-left: auto; /* Empujar hacia la derecha */

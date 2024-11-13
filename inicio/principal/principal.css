@@ -15,6 +15,7 @@ body{
 html {
 	font-size: 62.5%;
 	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;	  
 }
 
 * {
@@ -355,7 +356,7 @@ font-style: italic;
 	gap: 2rem;
 }
 
-.category-moca {
+.category-mision {
 	background-image: linear-gradient(#00000080, #00000080),
 		url('images2/foto.jpg');
 	background-size: cover;
@@ -363,7 +364,7 @@ font-style: italic;
 	background-repeat: no-repeat;
 }
 
-.category-capuchino {
+.category-nosotros {
 	background-image: linear-gradient(#00000080, #00000080),
 		url('images2/3ra');
 	background-size: cover;
@@ -371,7 +372,7 @@ font-style: italic;
 	background-repeat: no-repeat;
 }
 
-.category-expreso {
+.category-vision {
 	background-image: linear-gradient(#00000080, #00000080),
 		url('images2/64ad2f9a847bb.jpeg');
 	background-size: cover;
@@ -518,13 +519,25 @@ font-style: italic;
 	background: rgb(255, 255, 255);
 	padding: 0.5rem 1rem;
 	color: #000000;
-	font-size: 12px;
+	font-size: 14.5px;
+    font-family: Poppins;
 	cursor: pointer;
 	border-radius: 30px;
 	text-decoration: none;
 	font-weight: bold;
 	transition: .4s ease-in-out;
 }
+
+
+button {
+	border: none !important;
+	outline: none !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	text-shadow: none !important;
+  }
+
 .card .info .btn:hover {
 	background: rgb(255, 51, 0);
 	color: #ffffff;
@@ -532,7 +545,13 @@ font-style: italic;
 }
 
 
-.wrapperr {
+.price {
+	font-weight: bold;
+	font-size: 15px;
+	color: #ffffff;
+  }
+
+  .wrapperr {
 	justify-content: space-around;
 	width: 90%;
 	display: grid;
@@ -543,7 +562,7 @@ font-style: italic;
 	box-sizing: border-box; 
 }
 .cardd {
-	right: -4.5%;
+	right: -20.5%;
 	width: 360px;
 	height: 190px;
 	background: #8b8b8b;
@@ -797,7 +816,7 @@ margin-bottom: -30px;
 
 
 .faq-container {
-	width: 100%; /* Cambiado de max-width a width */
+	width: 90%; /* Cambiado de max-width a width */
 	margin: 0 auto; /* Quitados los márgenes laterales */
   }
 
