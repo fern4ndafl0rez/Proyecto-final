@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 localStorage.setItem('password', password);
 
                 // Mostrar mensaje de éxito
-                document.getElementById('registerMessage').textContent = '¡Cuenta creada con éxito!';
-                document.getElementById('registerMessage').style.color = 'green';
+                document.getElementById('registerMessage').textContent ='¡Cuenta creada con éxito !';
+                document.getElementById('registerMessage').style.color = 'white';
 
                 // Redirigir a otra página
                 setTimeout(() => {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (loginUsername === storedUsername && loginPassword === storedPassword) {
                 document.getElementById('loginMessage').innerHTML = 'Inicio de sesión exitoso.<br>Redirigiendo a la página de inicio...';
-                document.getElementById('loginMessage').style.color = 'green';
+                document.getElementById('loginMessage').style.color = 'white';
                 setTimeout(() => {
                     window.location.href = 'principal/principal.html';
                 }, 2000);

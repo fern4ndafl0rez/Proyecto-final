@@ -5,8 +5,20 @@
     <title>Patacomania : El sabor que nunca olvidas </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="principal.css">
-    <link rel="stylesheet" href="responsive.css">
 	<link rel="stylesheet" href="menucarrito.css">
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="navbar.css">
+	<link rel="stylesheet" href="banner.css">
+	<link rel="stylesheet" href="caracteristicas.css">
+	<link rel="stylesheet" href="nosotros.css">
+	<link rel="stylesheet" href="productos.css">
+	<link rel="stylesheet" href="especiales.css">
+	<link rel="stylesheet" href="user.css">
+	<link rel="stylesheet" href="ubicaciones.css">
+	<link rel="stylesheet" href="faq.css">
+	<link rel="stylesheet" href="reseñas.css">
+	<link rel="stylesheet" href="footer.css">
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +48,7 @@
 						    <div id="listacarrito" class="menucarrito">
 								<div id="cerrarcarrito"><i class='bx bx-x-circle'></i></div>
 								<ul id="carrito-items">
-                                
+                            
 								</ul>
 								<div id="total-carrito" class="total">Total: $0</div>
 								<button id="vaciar-carrito" class="vaciar-btn">Vaciar Carrito</button>
@@ -53,7 +65,22 @@
 			</div>
 		</header>
        <!--HEADER/CIERRE -->
-
+	   <div id="menuPerfil" class="menuser">
+		<i class='bx bx-user-circle'></i>
+        <i class='bx bx-x-circle' id="cerrarPerfil"></i> <!-- Botón de cerrar -->
+	    <h3>
+            Mi Perfil
+        </h3>
+        <div class="perfil-info">
+            <p class="info-linea">
+                <strong><i class='bx bxs-user-circle'></i>Usuario:</strong> <span id="nombreUsuario"></span>
+            </p>
+            <p class="info-linea">
+                <strong><i class='bx bxs-lock-alt'></i>Contraseña:</strong> <span id="passwordUsuario"></span>
+            </p>
+        </div>
+    </div>
+</div>
 	   <!--MENU DESPEGABLE EN DISPOSITIVOS -->
 		<div class="menu-toggle">
 			<i class="fas fa-bars"></i>
@@ -71,10 +98,11 @@
 				</ul>
 
 				<form action="#" class="search-form">
-				  <input type="search" placeholder="Buscar..." />
+				  <input type="search" id="searchInput" placeholder="Buscar . ."/>
 				  <button class="btn-search">
 					<i class='bx bx-search'></i>
 				  </button>
+				  <div class="search-results" id="searchResults">
 				</form>
 			  </nav>
 		</div>	  
@@ -135,13 +163,17 @@
                 <br>
 
 				<div class="container-categories">
-					<div class="card-category category-mision">
+					<section id="mision">
+				     <ul>
+					 <div class="card-category category-mision">
 						<p>Mision</p>
-						<span>Ver más</span>
-					</div>
+						<li><span>Ver más</span><a href="#mision"></a></li>
+					 </div>
+			        </ul>				 
+				   </section>
 					<div class="card-category category-nosotros">
 						<p>Nosotros</p>
-						<span>Ver más</span>
+						<span>Ver más</span><a href="#nosotros"></a>
 					</div>
 					<div class="card-category category-vision">
 						<p>Vision</p>
@@ -167,7 +199,7 @@
 							<h1>Patacon Supremo</h1>
 							<p>Una explosión de sabores: carne, pollo, aguacate, queso, cebolla y tomate, todo sobre un patacón dorado y crujiente, cubierto con nuestras irresistibles salsas. Una opción completa para los que buscan algo más.</p>
 							<button class="btn"  data-producto="Patacon Supremo" data-precio="20000" type='submit'>Agregar al Carrito</button>
-							<span class="price">&nbsp;&nbsp;&nbsp;$20.000</span>
+							<span class="precio">&nbsp;&nbsp;&nbsp;$20.000</span>
 						</div>
 					</div>
 					<div class="card">
@@ -176,7 +208,7 @@
 							<h1>Patacón Tradicional</h1>
 							<p>Un patacón crujiente y personalizable. Elige tu proteína favorita y combínala con nuestras salsas para disfrutar de un sabor auténtico y sencillo.</p>
 							<button class="btn"  data-producto="Patacon Tradicional" data-precio="10000" type='submit'>Agregar al Carrito</button>
-							<span class="price">&nbsp;&nbsp;&nbsp;$10.000</span>
+							<span class="precio">&nbsp;&nbsp;&nbsp;$10.000</span>
 						</div>
 					</div>
 					<div class="card">
@@ -185,7 +217,7 @@
 							<h1>Patacón Mixto</h1>
 							<p>La combinación perfecta: carne, pollo y queso sobre un crujiente patacón, acompañado de nuestras salsas especiales. Ideal para quienes quieren probarlo todo en un solo bocado.</p>
 							<button class="btn"  data-producto="Patacon Mixto" data-precio="15000"type='submit'>Agregar al Carrito</button>
-							<span class="price">&nbsp;&nbsp;&nbsp;$15.000</span>
+							<span class="precio">&nbsp;&nbsp;&nbsp;$15.000</span>
 						</div>
 					</div>
 					<div class="card">
@@ -194,7 +226,7 @@
 							<h1>Patacón Salchipapa</h1>
 							<p>Deléitate con nuestro patacón crujiente, que combina la textura perfecta con un delicioso relleno de papas fritas doradas y salchichas jugosas. ¡Una opción deliciosa que no te puedes perder!</p>
 							<button class="btn" data-producto="Patacon Salchipapa" data-precio="8000" type='submit'>Agregar al Carrito</button>
-							<span class="price">&nbsp;&nbsp;&nbsp;$8.000</span>
+							<span class="precio">&nbsp;&nbsp;&nbsp;$8.000</span>
 						</div>
 					</div>
 				</div>
@@ -210,7 +242,7 @@
 					<div class="cardd">
 						<img src="images2/fosforitos.png" alt="">
 						<div class="info">
-							<h1>Ripio<span class="price"> &nbsp;( $2.500 )</span></h1>
+							<h1>Ripio<span class="price">&nbsp;( $2.500 )</span></h1>
 							<p>Crujientes papitas fritas, ideales para añadir un toque extra de textura y sabor a tus patacones.</p>
 						</div>
 					</div>
@@ -239,35 +271,35 @@
 					<div class="cardd">
 						<img src="images2/descarga.webp" alt="">
 						<div class="info">
-							<h1>Mozzarella<span class="price">( $6.500 )</span></h1>
+							<h1>Mozzarella<span class="price">&nbsp;( $6.500 )</span></h1>
 							<p> Suave y fundente, el queso mozzarella se derrite en la boca, añadiendo cremosidad y un sabor lácteo delicioso.</p>
 						</div>
 					</div>
 					<div class="cardd">
 						<img src="images2/chorizo.jpg" alt="">
 						<div class="info">
-							<h1>Chorizo<span class="price">( $5.000 )</span></h1>
+							<h1>Chorizo<span class="price">&nbsp;( $5.000 )</span></h1>
 							<p>Picante y jugoso, el chorizo le da un sabor robusto y característico a tus patacones, ideal para los amantes de la carne.</p>
 						</div>
 					</div>
 					<div class="cardd">
 						<img src="images2/hogao" alt="">
 						<div class="info">
-							<h1>Hogao<span class="price">( $2.000 )</span></h1>
+							<h1>Hogao<span class="price">&nbsp;( $2.000 )</span></h1>
 							<p>Salsa típica colombiana hecha a base de tomate y cebolla, que aporta frescura y un toque de sabor casero a tus platos.</p>
 						</div>
 					</div>
 					<div class="cardd">
 						<img src="images2/chicharrones.jpg" alt="">
 						<div class="info">
-							<h1>Chicharron<span class="price">( $8.000 )</span></h1>
+							<h1>Chicharron<span class="price">&nbsp;( $8.000 )</span></h1>
 							<p>Crujiente y sabroso, el chicharrón es el complemento perfecto para los patacones, brindando un contraste irresistible de texturas y sabores.</p>
 						</div>
 					</div>
 					<div class="cardd">
 						<img src="images2/mayonesa.jpg" alt="">
 						<div class="info">
-							<h1>Mayo-Picante<span class="price">( $2.000 )</span></h1>
+							<h1>Mayo-Picante<span class="price">&nbsp;( $2.000 )</span></h1>
 							<p>Cremosa y con un toque de picante, esta mayonesa es el complemento ideal para realzar el sabor de tus patacones con una explosión de sabor.</p>
 						</div>
 				</div>
@@ -483,5 +515,7 @@
         <script src="principal.js"></script>
         <script src="menu.js"></script>
         <script src="carritodecompras.js"></script>
+		<script src="usuario.js"></script>
+		<script src="search.js"></script>
  </body>
 </html>

@@ -1,0 +1,90 @@
+
+/* ********************************** */
+/*               HEADER               */
+/* ********************************** */
+.container-hero {
+	background: #ff4e02ec
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+.customer-support {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.customer-support i {
+	font-size: 3.3rem; /*tamaño de iconos de user y carrito*/
+}
+
+.content-customer-support {
+	display: flex;
+	flex-direction: column;
+	color: rgb(255, 255, 255);
+	font-size: 2rem; /*aspectos del nombre de "bienvenido" con el nombre registrado*/
+}
+
+
+.container-user {
+	font-size: 12px;
+	display: flex;
+	gap: 1rem;
+	cursor: pointer;
+	color: rgb(255, 255, 255); /*contenedor principal de header*/
+}
+
+.container-user .bxs-user {
+	font-size: 3rem; /*icono de usuario*/
+	color: white;
+	padding-right: 2.5rem;
+	border-right: 1px solid #e2e2e2;
+}
+
+.container-user .bx-basket {
+	font-size: 3rem;
+	color: white;
+	padding-left: 1rem; /*icono de carrito*/
+}
+
+.content-shopping-cart {
+	display: flex;
+	flex-direction: column; /*letras del "carrito ()"*/
+    color: rgb(255, 255, 255);
+
+}
+
+/* Media Queries para dispositivos móviles */
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+
+    /* Header */
+    .hero {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .customer-support {
+        justify-content: center;
+    }
+
+    .content-customer-support {
+        font-size: 1.6rem;
+    }
+
+	    /* Ajustes del carrito y usuario */
+	.container-user {
+	position: absolute;
+	left: 20px;
+	right: 70px;
+	top: 20px;
+	}
+}

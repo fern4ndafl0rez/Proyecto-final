@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const precio = carritoProductos[producto].precio;
             total += cantidad * precio;
         }
-        totalElement.innerHTML = `Total: <span style="color: #fc4c00;">$${total.toLocaleString()}</span>`;
+        totalElement.innerHTML = `Total: <span style="color: #fc4c00;">$${total.toLocaleString('es-CO')}</span>`;
     }
 
     function actualizarCarrito() {
@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const item = document.createElement('li');
             item.innerHTML = `
                 <span style="color: #ff4500; margin-right: 8px;">•</span>
-                ${cantidad} - ${producto}  
-                <span style="color: #ff4500;">$${precio.toLocaleString()}</span>`;
+                ${cantidad} <span style="color: #ff4500;">x</span> ${producto}  
+                <span style="color: #ff4500;">$${precio.toLocaleString('es-CO')}</span>`;
             item.style.listStyle = 'none';
             compras.appendChild(item);
         }
@@ -74,4 +74,4 @@ document.addEventListener('DOMContentLoaded', () => {
     btnagregar.forEach(button => {
         button.addEventListener('click', agregarProducto);
     });
-});
+})

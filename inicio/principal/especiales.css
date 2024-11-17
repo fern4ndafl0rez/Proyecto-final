@@ -1,0 +1,123 @@
+
+.price {
+	font-weight: bold;
+	font-size: 19px;
+	color: #ffffff;
+  }
+
+  .wrapperr {
+	justify-content: space-around;
+	width: 90%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* 4 imágenes por fila */
+	gap: 20px; /* Espacio entre las imágenes */
+	max-width: 100%; /* Asegura que no se salga del ancho del navegador */
+	padding: 0 20px; /* Agrega un margen interno a los lados para que no toque el borde */
+	box-sizing: border-box; 
+}
+.cardd {
+	right: -20.5%;
+	width: 360px;
+	height: 190px;
+	background: #8b8b8b;
+	display: flex;
+	justify-content: center;
+    margin-bottom: 20px;
+	align-items: flex-end;
+	padding: 2rem 1rem;
+	position: relative;
+	transition: 0.5s all ease-in-out;
+	border-radius: 30px;
+}
+.cardd:hover {
+	transform: translateY(-10px);
+}
+.cardd::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(13, 36, 63, 0.3), rgb(163, 61, 14));
+	z-index: 2;
+	opacity: 0;
+	transition: 0.5s all;
+	border-radius: 30px;
+}
+.cardd:hover::before {
+	opacity: 1;
+}
+
+.cardd img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: grid;
+	border-radius: 30px;
+}
+.cardd .info {
+	position: relative;
+	color: #ffffff;
+	z-index: 3;
+	opacity: 0;
+	transform: translateY(30px);
+	transition: 0.5s all;
+}
+.cardd:hover .info {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.cardd .info h1 {
+	font-size: 300%;
+	line-height: 40px;
+	margin-bottom: 5px;
+}
+.cardd .info p {
+	font-size: 12px;
+	margin-bottom: 3px;
+}
+
+@media (max-width: 480px) {
+
+.wrapperr {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+}
+
+.cardd {
+    width: 100%;
+    right: 0;
+}
+
+    /* Mantener el resto de los estilos igual */
+    .cardd {
+        width: 100%;
+        margin-bottom: 15px;
+        border-radius: 30px;
+        overflow: hidden;
+        /* Añadir display flex para controlar la posición de la imagen */
+        display: flex;
+        padding: 10px;
+        margin-left: 7%;
+    }
+
+    /* Ajustar la imagen */
+    .cardd img {
+        border-radius: 30px;
+        width: 420px; /* Reducir un poco el tamaño */
+        height: 220px;
+        margin-right: 0; /* Eliminar margen derecho */
+        margin-left: auto; /* Empujar hacia la derecha */
+    }
+
+    /* Ajustar el contenedor de información */
+    .cardd .info {
+        flex: 1; /* Tomar el espacio restante */
+        padding: 10px 15px;
+    }
+}

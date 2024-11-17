@@ -1,0 +1,108 @@
+/* ********************************** */
+/*             CATEGORIES             */
+/* ********************************** */
+
+.top-categories {
+    text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+    font-size: 15px;
+}
+
+.cursiva {
+font-style: italic;
+}
+
+.orange {
+	width: 100vw;
+	margin-left: -50vw;
+	left: 50%;
+	position: relative;
+	background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,77,0,1) 50%, rgba(255,0,0,1) 100%);
+	color: black; /* O el color de texto que prefieras */
+	padding: 20px;
+	text-align: center; /* Opcional, para centrar el texto */
+
+}
+
+.container-categories {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+
+.card-category {
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2rem;
+	gap: 2rem;
+}
+
+.category-mision {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('images2/foto.jpg');
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.category-nosotros {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('images2/3ra');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.category-vision {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('images2/64ad2f9a847bb.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.card-category p {
+	font-size: 2.5rem;
+	color: #fff;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.card-category p::after {
+	content: '';
+	width: 2.5rem;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.card-category span {
+	font-size: 1.6rem;
+	color: #fff;
+	cursor: pointer;
+}
+
+.card-category span:hover {
+	color: var(--primary-color);
+}
+@media (max-width: 480px) {
+ /* Categories */
+    .container-categories {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .card-category {
+        height: 15rem;
+    }
+}

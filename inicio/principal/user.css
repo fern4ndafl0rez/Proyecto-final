@@ -1,0 +1,68 @@
+#menuPerfil {
+    display: none; /* Oculta el menú por defecto */
+    position: absolute;
+    top: 70px; /* Ajusta según la posición deseada */
+    right: 110px; /* Ajusta según la posición deseada */
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 4.2rem 3.1rem;
+    width: 21%;
+    height: 30%;
+    z-index: 1000;
+    border-radius: 5%;
+}
+
+#menuPerfil.mostrarmenu {
+    display: block; /* Muestra el menú cuando se añade la clase */
+}
+
+#menuPerfil .bx-x-circle {
+    color: orangered;
+    font-size: 3.8rem;
+    font-weight: bold;
+    top: -5rem;
+    position: relative;
+    left: 63%;
+}
+
+#menuPerfil .bx-user-circle {
+    color: orangered;
+    font-size: 6rem;
+    top: -2.5rem;
+    position: relative;
+    left: -5%;
+}
+
+#menuPerfil h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+    margin-top: -3rem;
+    padding: 1rem 0;
+}
+
+#menuPerfil p {
+    top: 4rem;
+    margin-top: -9px;
+    margin-bottom: 1rem;
+   font-size: 1.1rem;
+    color: #000000;
+}
+
+#menuPerfil .bxs-user-circle {
+    color: orangered;
+    font-size: 2rem;
+    margin-top: 2%;
+    margin-bottom: -1.5rem;
+    top: -2.5rem;
+    line-height: 1rem;
+
+}
+
+#menuPerfil .bxs-lock-alt {
+    color: orangered;
+    font-size: 2rem;
+    margin-top: -2px;
+    top: -2.5rem;
+}
