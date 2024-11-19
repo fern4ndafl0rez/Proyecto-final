@@ -122,6 +122,38 @@
 	color: #ffffff;  /*icono de lupa en la barra de busqueda*/
 }
 
+
+/* Agregar estos estilos a tu CSS */
+.search-results {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 9999;
+}
+
+.search-result-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.search-result-item:hover {
+    background-color: #f5f5f5;
+}
+
+/* Asegurarse que el contenedor del formulario tenga posición relativa */
+.search-form {
+    position: relative;
+}
+
 @media (max-width: 480px) {
     .search-form {
         display: none;

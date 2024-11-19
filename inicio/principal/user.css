@@ -8,7 +8,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 4.2rem 3.1rem;
     width: 21%;
-    height: 30%;
+    height: 28%;
     z-index: 1000;
     border-radius: 5%;
 }
@@ -46,23 +46,22 @@
     top: 4rem;
     margin-top: -9px;
     margin-bottom: 1rem;
-   font-size: 1.1rem;
+    font-size: 1.3rem;
     color: #000000;
-}
-
-#menuPerfil .bxs-user-circle {
+  }
+  
+  #menuPerfil .bxs-user-circle {
     color: orangered;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 2%;
     margin-bottom: -1.5rem;
     top: -2.5rem;
     line-height: 1rem;
-
-}
-
-#menuPerfil .bxs-lock-alt {
+  }
+  
+  #menuPerfil .bxs-lock-alt {
     color: orangered;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: -2px;
     top: -2.5rem;
-}
+  }

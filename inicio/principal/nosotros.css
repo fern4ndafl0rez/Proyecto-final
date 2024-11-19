@@ -85,14 +85,15 @@ font-style: italic;
 	transform: translate(-50%, 50%);
 }
 
-.card-category span {
+.card-category a {
 	font-size: 1.6rem;
 	color: #fff;
 	cursor: pointer;
+	text-decoration: none;
 }
 
-.card-category span:hover {
-	color: var(--primary-color);
+.card-category a:hover {
+	color: orangered;
 }
 @media (max-width: 480px) {
  /* Categories */

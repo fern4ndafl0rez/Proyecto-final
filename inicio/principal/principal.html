@@ -18,7 +18,6 @@
 	<link rel="stylesheet" href="faq.css">
 	<link rel="stylesheet" href="reseñas.css">
 	<link rel="stylesheet" href="footer.css">
-
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +79,7 @@
             </p>
         </div>
     </div>
-</div>
+     </div>
 	   <!--MENU DESPEGABLE EN DISPOSITIVOS -->
 		<div class="menu-toggle">
 			<i class="fas fa-bars"></i>
@@ -97,15 +96,15 @@
 				  <li><a href="cierre/cierre.html">Cerrar Sesion</a></li>
 				</ul>
 
-				<form action="#" class="search-form">
+				<form class="search-form" onsubmit="return false;"> 
 				  <input type="search" id="searchInput" placeholder="Buscar . ."/>
-				  <button class="btn-search">
+				  <button type="button" class="btn-search">
 					<i class='bx bx-search'></i>
 				  </button>
 				  <div class="search-results" id="searchResults">
 				</form>
 			  </nav>
-		</div>	  
+		    </div>	  
 	    <!--BANNER CON EL NOMBRE DE LA PAGINA Y FOTOGRAFIA -->
 		<section class="banner">
 			<div class="content-banner">
@@ -154,34 +153,29 @@
 
 			<!--SECCION NOSOTROS -->
 		    <section id="nosotros">
-			<section class="container top-categories">
+			 <section class="container top-categories">
 				<h1 class="heading-1">Sabores Únicos, Ingredientes Frescos: Bienvenidos a Patacomanía</h1>
                 <p> Bienvenido a Patacomanía, una empresa que nace del amor por la cocina tradicional y el deseo de ofrecer un producto innovador que combine lo mejor de la tradición caribeña con un toque moderno y urbano. En Patacomanía, somos especialistas en una auténtica delicia: los patacones rellenos. Pero no nos detenemos ahí, también hemos perfeccionado la fórmula para hacer de cada plato una experiencia gastronómica única, siempre usando ingredientes frescos y locales que garantizan la mejor calidad en cada bocado.</p>
 		      <p class="orange"> En Patacomanía, nuestra <span class="cursiva"> mision</span> es simple: ofrecer patacones frescos, sabrosos y llenos de amor. Creemos en la calidad sobre la cantidad, por lo que cada uno de nuestros productos es preparado con dedicación, cuidando cada detalle para brindar una experiencia inigualable. No solo vendemos comida, ofrecemos momentos. Cada plato es una oportunidad para disfrutar de la compañía de amigos y familiares, compartiendo el amor por la buena comida</p>
                 <p>Nuestra <span class="cursiva"> vision</span> es convertirnos en líderes en la industria gastronómica, no solo en Cali, sino también a nivel nacional, llevando nuestra pasión por los patacones a nuevos horizontes. Queremos ser reconocidos por nuestra capacidad de innovar dentro de la tradición, creando nuevas combinaciones de sabores y texturas que sorprendan y deleiten a nuestros comensales.
                A largo plazo, buscamos expandir nuestras operaciones, abrir nuevos locales y continuar mejorando nuestro servicio, todo sin perder la esencia de lo que nos hace especiales: el amor por los patacones y por nuestra comunidad.</p>
                 <br>
-
+            </div>
 				<div class="container-categories">
-					<section id="mision">
-				     <ul>
-					 <div class="card-category category-mision">
-						<p>Mision</p>
-						<li><span>Ver más</span><a href="#mision"></a></li>
-					 </div>
-			        </ul>				 
-				   </section>
-					<div class="card-category category-nosotros">
-						<p>Nosotros</p>
-						<span>Ver más</span><a href="#nosotros"></a>
-					</div>
-					<div class="card-category category-vision">
-						<p>Vision</p>
-						<span>Ver más</span>
-					</div>
+						<div class="card-category category-mision">
+							<p>Mision</p>
+							<a href="#nosotros">Ver más</a>
+						</div>
+						<div class="card-category category-nosotros">
+							<p>Nosotros</p>
+							<a href="#nosotros">Ver más</a>
+						</div>
+						<div class="card-category category-vision">
+							<p>Vision</p>
+							<a href="#nosotros">Ver más</a>
+						</div>
 				</div>
-			</section>
-		    </section>
+			</section>	
 			<!--PRODUCTOS -->
 			<section id="productos">
 			<section class="container top-products" id="productos">
@@ -516,6 +510,6 @@
         <script src="menu.js"></script>
         <script src="carritodecompras.js"></script>
 		<script src="usuario.js"></script>
-		<script src="search.js"></script>
+		<script src="bannerimgs.js"></script>
  </body>
 </html>
