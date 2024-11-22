@@ -47,15 +47,8 @@ html {
 /*            MAIN CONTENT            */
 /* ********************************** */
 .main-content {
-	background-color: rgb(255, 255, 255)}
-
-
-
-
-
-
-
-
+	background-color: rgb(255, 255, 255)
+}
 /* Estilo base para el menú principal */
 .main-menu {
     display: flex;

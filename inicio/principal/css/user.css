@@ -65,3 +65,38 @@
     margin-top: -2px;
     top: -2.5rem;
   }
+
+  @media (max-width: 480px) {
+    #menuPerfil {
+        display: none; /* Oculta el menú por defecto */
+        position: absolute;
+        top: 70px; /* Ajusta según la posición deseada */
+        right: 290px; /* Ajusta según la posición deseada */
+        background-color: #fff; /* Fondo blanco */
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 4.2rem 3.1rem;
+        width: 38%;
+        height: 18%;
+        z-index: 1000;
+        border-radius: 5%;
+    }
+    
+
+    #menuPerfil .bx-user-circle {
+        color: orangered;
+        font-size: 6rem;
+        top: -2.5rem;
+        position: relative;
+        left: -7%;
+    }
+
+    #menuPerfil .bx-x-circle {
+        color: orangered;
+        font-size: 3.8rem;
+        font-weight: bold;
+        top: -5rem;
+        position: relative;
+        left: 50%;
+    }
+  }

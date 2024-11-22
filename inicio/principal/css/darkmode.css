@@ -1,0 +1,145 @@
+.switch {
+    position: absolute; /* Cambiado a absolute para mantener el flujo del documento */
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    right: 20px; /* Más preciso que left: 94% */
+    top: 32%; /* Centrar verticalmente */
+    transform: translateY(-50%); /* Ajuste fino del centrado vertical */
+    z-index: 10%;
+}
+
+.dark {
+    background-color: orangered;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: orangered;
+    border-radius: 34px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: '';
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: rgb(0, 21, 90);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(0, 21, 90);
+}
+
+input:checked + .slider::before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+@media (max-width: 480px) {
+    .switch {
+        position: absolute; /* Cambiado a absolute para mantener el flujo del documento */
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        right: 20px; /* Más preciso que left: 94% */
+        top: 13%; /* Centrar verticalmente */
+        transform: translateY(-50%); /* Ajuste fino del centrado vertical */
+        z-index: 1;
+    }
+}
+
+body.dark-mode {
+    background-color: #151515;
+    color: #f9f5f0;
+}
+
+.main-content.dark-mode {
+    background-color: #222222;
+}
+
+.container.dark-mode {
+    color: #f9f5f0;
+}
+
+.dark-mode .top-categories p {
+    color: var(--text-dark);
+}
+
+.dark-mode .top-products span .active{
+    color: white;
+}
+
+
+.dark-mode .card,
+.dark-mode .info,
+.dark-mode .card-feature {
+    background-color:var(--background-dark);
+    color: var(--text-dark);
+}
+
+.dark-mode .heading-1,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode span {
+    color: var(--text-dark);
+}
+
+
+.dark-mode .card-feature p {
+    color: rgb(211, 211, 211);
+}
+
+.dark-mode .faq-item .faq-answer{
+    color: rgb(0, 0, 0);
+}
+
+.dark-mode #menuPerfil {
+    background-color: #373737; /* Fondo negro */
+    box-shadow: none;
+    border: none;
+}
+.dark-mode #menuPerfil h3,
+.dark-mode #menuPerfil p {
+    color: white;
+}
+
+.dark-mode .menucarrito {
+    background-color:  #373737; /* Fondo negro */
+}
+
+.dark-mode .menucarrito ul li {
+    color: white;
+}
+
+.dark-mode .menucarrito p {
+    color: white;
+}
+
+.dark-mode .menucarrito #total-carrito {
+    color: white;
+}

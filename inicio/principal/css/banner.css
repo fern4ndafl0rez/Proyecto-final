@@ -1,0 +1,81 @@
+/* Estilos generales del banner (+) */ 
+.banner { 
+    height: 58rem; /* Altura fija usando unidad de rem */
+    background-size: cover; /* La imagen de fondo cubre todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    display: block; /* Muestra como bloque */
+}  
+
+/* Contenedor de contenido del banner */
+.content-banner { 
+    max-width: 100rem; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 7rem 0; /* Espaciado vertical */
+}  
+
+/* Estilo del párrafo en el banner (+) */
+.content-banner p { 
+    color: orangered; /* Color naranja */
+    font-size: 1.2rem; /* Tamaño de fuente pequeño */
+    margin-bottom: -0.3rem; /* Añade espacio o margen*/
+    font-weight: 500px; /* Grosor de fuente medio */
+}  
+
+/* Estilo del título del banner  (+) */
+.content-banner h2 { 
+    color: #fff; /* Color blanco */
+    font-size: 3.5rem; /* Tamaño de fuente grande */
+    font-weight: 500px; /* Grosor de fuente medio */
+    line-height: 1.2; /* Altura de línea para mejor legibilidad */
+}  
+
+/* Estilo del enlace en el banner (+)*/
+.content-banner a { 
+    margin-top: 1rem; /* Margen superior */
+    text-decoration: none; /* Sin subrayado */
+    color: #ffffff; /* Color de texto blanco (+)*/
+    background-color: orangered; /* Fondo naranja (+)*/
+    display: inline-block; /* Mostrar como bloque en línea */
+    padding: 1rem 3rem; /* Espaciado interno el cual define el tamaño del boton (+)*/
+    text-transform: uppercase; /* Texto en mayúsculas */
+    border-radius: 3rem; /* Bordes redondeados (+) */
+}  
+
+/* Estilo de imagen en el banner  (+) */
+.content-banner img { 
+    left: 22rem; /* Desplazamiento desde la izquierda */
+    width: 300px; /* Ancho fijo */
+    height: 300px; /* Altura fija */
+} 
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 480px) {     
+    /* Ajustes del banner para pantallas pequeñas */
+    .banner {
+        height: auto; /* Altura automática */
+        padding: 20px; /* Espaciado interno */
+    }
+     
+    /* Ajustes del contenido del banner */
+    .content-banner {
+        padding: 2rem; /* Espaciado interno reducido */
+        text-align: center; /* Centrar contenido */
+    }
+     
+    /* Ajustes del título */
+    .content-banner h2 {
+        font-size: 2.4rem; /* Tamaño de fuente reducido */
+        margin-bottom: 1rem; /* Margen inferior */
+    }
+     
+    /* Ajustes del párrafo */
+    .content-banner p {
+        font-size: 1.4rem; /* Tamaño de fuente ligeramente mayor */
+    }
+     
+    /* Ajustes del logo (imagen) */
+    .hero img {
+        width: 150px; /* Ancho reducido */
+        height: auto; /* Altura ajustada automáticamente */
+    } 
+}

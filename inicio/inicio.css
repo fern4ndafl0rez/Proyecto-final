@@ -257,7 +257,7 @@ footer {
 	position: relative;
     left: -0.5rem;
 	width: 94%;
-	background-color: #c72a09;
+	background-color: orangered;
 	padding: 20px 50px;
 	display: flex;
 	justify-content: center;
@@ -319,7 +319,7 @@ footer .wave {
 	top: -100px;
 	left: 0;
 	width: 100%;
-	background:url(images1/ondaa.png.png);
+	background:url(images1/ondapagina.png);
 	background-size: 1000px 100px;
 }
 footer .wave#wave1 {

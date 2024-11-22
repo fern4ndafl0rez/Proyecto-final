@@ -1,145 +1,168 @@
+/* Estilos generales del footer */
+footer { 
+    position: relative; /* Posicionamiento relativo para ajustar elementos internos */
+    width: 100%; /* Ancho completo */
+    background-color: var(--primary-color); /* Color de fondo definido por variable */
+    min-height: 100px; /* Altura mínima */
+    padding: 20px 50px; /* Espaciado interno */
+    display: flex; /* Usa flexbox para distribución */
+    justify-content: center; /* Centra contenido horizontalmente */
+    align-items: center; /* Centra contenido verticalmente */
+    flex-direction: column; /* Distribuye elementos en columna */
+}  
 
-footer {
-	position: relative;
-	width: 100%;
-	background-color: var(--primary-color);
-	min-height: 100px;
-	padding: 20px 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
+/* Contenedores de iconos sociales y menú */
+footer .socialicon, footer .menu { 
+    position: relative; /* Posicionamiento relativo */
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra elementos horizontalmente */
+    align-items: center; /* Centra elementos verticalmente */
+    margin: 10px 0; /* Margen vertical */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+} 
 
-footer .socialicon,
-footer .menu {
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 10px 0;
-flex-wrap: wrap;
-}
-footer .socialicon li,
-footer .menu li {
-	list-style: none;
-}
-footer .socialicon li a {
-	font-size: 27px;
- margin-right: 10px;
-  margin-top: 10px;
-  transition: .5s ease;
-	color: white;
-	margin: 0 10px;
-	display: inline-block;
-}
-footer .socialicon li a:hover {
-	transform: translateY(-10px);
-}
-footer .menu li a {
-	font-size: 1.6em;
-	color: white;
-	margin: 0 10px;
-	display: inline-block;
-	transition: 0.5;
-	text-decoration: none;
-}
-footer .menu li a:hover {
-	opacity: 1;
-}
-footer p {
- color: white;
- text-align: center;
- margin-top: 15px;
- margin-bottom: 10px;
- font-size: 1.2em;
-}
-footer .wave {
-	position: absolute;
-	top: -100px;
-	left: 0;
-	width: 100%;
-	background:url(images2/onda.png);
-	background-size: 1000px 100px;
-}
-footer .wave#wave1 {
-	z-index: 1000;
-	opacity: 0.9;
-	bottom: 90%;
-	animation: animateWave 4s linear infinite;
-}
-footer .wave#wave2 {
-	z-index: 999;
-	opacity: 0.5;
-	bottom: 90%;
-	animation: animateWave_02 4s linear infinite;
-}
-footer .wave#wave3 {
-	z-index: 1000;
-	opacity: 0.3;
-	bottom: 90%;
-	animation: animateWave_03 3s linear infinite;
-}
-footer .wave#wave3 {
-	z-index: 999;
-	opacity: 0.4;
-	bottom: 90%;
-	animation: animateWave_04 3s linear infinite;
-}
-@keyframes animateWave {
-	0%
-	{
-		background-position-x: 1000px; 
-	}
-	100% {
-		background-position-x :0px; 
-	}
-}
-@keyframes animateWave_02 {
-	0%
-	{
-		background-position-x: 0px; 
-	}
-	100% {
-		background-position-x:0px; 
-	}
-}
-@keyframes animateWave_03 {
-	0%
-	{
-		background-position-x: 1000px; 
-	}
-	100% {
-		background-position-x :0px; 
-	}
-}
-@keyframes animateWave_04 {
-	0%
-	{
-		background-position-x: 1000px; 
-	}
-	100% {
-		background-position-x :0px; 
-	}
-}
+/* Quita los estilos de lista predeterminados */
+footer .socialicon li, footer .menu li { 
+    list-style: none; /* Elimina viñetas */
+} 
 
-@media (max-width: 480px) {
-    /* Footer */
+/* Estilos para enlaces de iconos sociales */
+footer .socialicon li a { 
+    font-size: 27px; /* Tamaño de fuente grande */
+    margin-right: 10px; /* Margen derecho */
+    margin-top: 10px; /* Margen superior */
+    transition: .5s ease; /* Transición suave */
+    color: white; /* Color de texto blanco */
+    margin: 0 10px; /* Margen horizontal */
+    display: inline-block; /* Muestra como bloque en línea */
+} 
+
+/* Efecto de hover para iconos sociales */
+footer .socialicon li a:hover { 
+    transform: translateY(-10px); /* Mueve el ícono hacia arriba al pasar el mouse */
+} 
+
+/* Estilos para enlaces del menú */
+footer .menu li a { 
+    font-size: 1.6em; /* Tamaño de fuente grande */
+    color: white; /* Color de texto blanco */
+    margin: 0 10px; /* Margen horizontal */
+    display: inline-block; /* Muestra como bloque en línea */
+    transition: 0.5; /* Transición (aunque falta 's' de segundos) */
+    text-decoration: none; /* Elimina subrayado de enlaces */
+} 
+
+/* Efecto de hover para enlaces del menú */
+footer .menu li a:hover { 
+    opacity: 1; /* Mantiene la opacidad completa */
+} 
+
+/* Estilos para párrafos en el footer */
+footer p {  
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centrar texto */
+    margin-top: 15px; /* Margen superior */
+    margin-bottom: 10px; /* Margen inferior */
+    font-size: 1.2em; /* Tamaño de fuente */
+} 
+
+/* Estilos para la onda de fondo */
+footer .wave { 
+    position: absolute; /* Posicionamiento absoluto */
+    top: -100px; /* Desplazamiento hacia arriba */
+    left: 0; /* Alineado a la izquierda */
+    width: 100%; /* Ancho completo */
+    background: url(images2/ondapagina.png); /* Imagen de fondo */
+    background-size: 1000px 100px; /* Tamaño de la imagen de fondo */
+} 
+
+/* Animaciones de onda */
+/* Cada wave tiene diferentes características de opacidad y animación */
+footer .wave#wave1 { 
+    z-index: 1000; /* Capa superior */
+    opacity: 0.9; /* Opacidad casi completa */
+    bottom: 90%; /* Posición desde abajo */
+    animation: animateWave 4s linear infinite; /* Animación de movimiento */
+} 
+
+footer .wave#wave2 { 
+    z-index: 999; /* Capa casi superior */
+    opacity: 0.5; /* Opacidad media */
+    bottom: 90%; 
+    animation: animateWave_02 4s linear infinite; 
+} 
+
+footer .wave#wave3 { 
+    z-index: 1000; 
+    opacity: 0.3; /* Opacidad baja */
+    bottom: 90%; 
+    animation: animateWave_03 3s linear infinite; 
+} 
+
+footer .wave#wave3 { 
+    z-index: 999; 
+    opacity: 0.4; /* Opacidad media-baja */
+    bottom: 90%; 
+    animation: animateWave_04 3s linear infinite; 
+} 
+
+/* Keyframes para animaciones de onda */
+/* Mueven la posición del fondo para crear efecto de movimiento */
+@keyframes animateWave { 
+    0% { 
+        background-position-x: 1000px; /* Posición inicial */
+    } 
+    100% { 
+        background-position-x: 0px; /* Posición final */
+    } 
+} 
+
+/* Variaciones de animación para diferentes capas de onda */
+@keyframes animateWave_02 { 
+    0% { 
+        background-position-x: 0px; 
+    } 
+    100% { 
+        background-position-x: 0px; 
+    } 
+} 
+
+@keyframes animateWave_03 { 
+    0% { 
+        background-position-x: 1000px; 
+    } 
+    100% { 
+        background-position-x: 0px; 
+    } 
+} 
+
+@keyframes animateWave_04 { 
+    0% { 
+        background-position-x: 1000px; 
+    } 
+    100% { 
+        background-position-x: 0px; 
+    } 
+} 
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 480px) {     
+    /* Ajustes para pantallas pequeñas */
     footer {
-        padding: 20px;
+        padding: 20px; /* Reduce el padding */
     }
-
+     
     footer .menu {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: column; /* Cambia a distribución vertical */
+        gap: 1rem; /* Añade espacio entre elementos */
     }
-
+     
     footer .socialicon {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: wrap; /* Permite que los iconos se envuelvan */
+        justify-content: center; /* Centra los iconos */
     }
-
+     
     footer .socialicon li a {
-        font-size: 20px;
-    }
+        font-size: 20px; /* Reduce el tamaño de los iconos */
+    } 
 }
